@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="5sp"
+    app:cardElevation="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/noteTitle_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textSize="18dp"
+            android:layout_toLeftOf="@id/deleteBtnNote_id"
+            android:layout_margin="4dp"
+            android:text="Note Title"/>
+
+        <TextView
+            android:id="@+id/note_time_stamp_id"
+            android:layout_below="@+id/noteTitle_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_toLeftOf="@id/deleteBtnNote_id"
+            android:textSize="18dp"
+            android:layout_margin="4dp"
+            android:text="Note Time Stamp"/>
+
+        <ImageView
+            android:id="@+id/deleteBtnNote_id"
+            android:src="@drawable/ic_baseline_delete_24"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:padding="4dp"
+            android:layout_margin="5dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
